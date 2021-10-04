@@ -1,11 +1,11 @@
 #!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=grad06:ppn=1:cluster-Grad,walltime=00:01:00
+#PBS -l nodes=grad06:ppn=16:cluster-Grad,walltime=00:01:00
 #PBS -M guilherme.carvalho@edu.pucrs.br
 #PBS -r n
 #PBS -j oe
-#PBS -d /home/pp12709/openmp/t1
+#PBS -d /home/pp12709/openmp/t1/pp_t1/Excutions
 #############
 echo Running on host `hostname`
 echo
