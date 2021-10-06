@@ -20,9 +20,9 @@ echo JOB_ID:
 echo `echo $PBS_JOBID`
 echo ################
 
-./sum-seq 1> saida_seq_01.txt 2> tempos_seq_01.txt
+export OMP_NUM_THREADS=8
+./sum-par 1> saida_par_01_8t.txt 2> tempos_par_01_8t.txt
 echo ""
-
 
 ############# If running a sequential or openMP program
 

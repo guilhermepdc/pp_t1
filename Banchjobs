@@ -1,0 +1,48 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad06
+
+Initial Time is Tue Oct 5 17:53:13 BRT 2021
+
+Directory is /home/pp12709/openmp/t1/pp_t1
+
+This jobs runs on the following nodes:
+grad06
+
+JOB_ID:
+134279
+
+
+
+=>> PBS: job killed: walltime 18043 exceeded limit 18000
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12709 on the batch nodes
+Doing node grad06
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 18:44:47 
+
+ -- MEMORY       = 2296kb 
+
+ -- VIRTUAL MEM  = 80336kb 
+
+ -- ELAPSED TIME = 05:00:43 
+

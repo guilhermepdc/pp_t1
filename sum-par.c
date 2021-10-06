@@ -14,17 +14,18 @@
 #define DIGITS 1000
 
 void sum(char* output, const long unsigned int d, const long unsigned int n) {
-    long unsigned int digit, i, remainder, div, mod;
+    long unsigned int digit, i, remainder, div, mod, aux;
     long unsigned int digits[d + 11];
     for (digit = 0; digit < d + 11; ++digit) {
         digits[digit] = 0;
     }
-#pragma omp parallel for private(digit) reduction(+:digits)
-    for (digit = 0; digit < d + 11 && remainder; ++digit) {
+#pragma omp parallel for private(digit, remainder, i, div, mod) schedule(dynamic,4)
+    for (i = 1; i <= n; ++i) {
         remainder = 1;
-        for (i = 1; i <= n; ++i) {
+        for (digit = 0; digit < d + 11 && remainder; ++digit) {
             div = remainder / i;
             mod = remainder % i;
+#pragma omp critical
             digits[digit] += div;
             remainder = mod * 10;
         }
@@ -60,3 +61,4 @@ int main() {
     }
     return 0;
 }
+
