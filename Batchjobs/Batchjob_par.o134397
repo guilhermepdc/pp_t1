@@ -1,0 +1,50 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad06
+
+Initial Time is Wed Oct 6 20:16:40 BRT 2021
+
+Directory is /home/pp12709/openmp/t1/pp_t1
+
+This jobs runs on the following nodes:
+grad06
+
+JOB_ID:
+134397
+
+
+
+
+
+Final Time is Wed Oct 6 20:44:36 BRT 2021
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12709 on the batch nodes
+Doing node grad06
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 02:14:06 
+
+ -- MEMORY       = 2296kb 
+
+ -- VIRTUAL MEM  = 145904kb 
+
+ -- ELAPSED TIME = 00:27:57 
+
